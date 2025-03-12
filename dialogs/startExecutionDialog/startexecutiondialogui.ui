@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StartExecutionDialogUI</class>
+ <widget class="QWidget" name="StartExecutionDialogUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>301</width>
+    <height>143</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Empezar ejecución</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="taskNameLayout">
+     <property name="spacing">
+      <number>3</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="reminder">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Vas a crear una nueva ejecución para la tarea:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="taskName">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>ERROR</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="taskLogLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>125</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Nombre de la ejecución:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="taskLog">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>3</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>None</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="statusLabel">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="cus::Button" name="cancelButton">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="cus::Button" name="startButton">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Ejecutar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>cus::Button</class>
+   <extends>QPushButton</extends>
+   <header location="global">custom/widgets/button/button.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
